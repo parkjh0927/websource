@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        <textarea> : 사용자한테 여러 줄의 내용을 입력 받을 때 사용
+          rows : 행 수, cols : 컬럼 수
+    -->
+    <h1>상품 주문서</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>개인 정보</legend>
+        <div>
+          <label for="name">이름</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="여백없이 입력"
+          />
+        </div>
+        <div>
+          <label for="tel">연락처</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            placeholder="연락가능한 번호"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>배송지 정보</legend>
+        <div>
+          <label for="address">주소</label>
+          <input type="text" name="address" id="" size="40" />
+        </div>
+        <div>
+          <label for="hometel">전화번호</label>
+          <input
+            type="tel"
+            name="hometel"
+            id="hometel"
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}"
+          />
+        </div>
+        <div>
+          <label for="">메모</label>
+          <textarea name="memo" id="" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>주문 정보</legend>
+        <div>
+          <label>
+            <input type="checkbox" name="order" id="" />과테말라 아티구아 (100g)
+          </label>
+          <label> <input type="number" name="amount" id="" />개</label>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="order" id="" />인도네시아 만델링 (100g)
+          </label>
+          <label> <input type="number" name="amount1" id="" />개</label>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
